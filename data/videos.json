@@ -2,15 +2,8 @@
     {
         "id": 1,
         "title": "سورت النساء",
-        "video": "videos/1.mp4",
+        "video": "https://www.youtube.com/watch?si=LMQbtjBejp6a8z8H&v=z_EKCpJm_sw&feature=youtu.be",
         "image": "images/سورت النساء.png",
-        "description": "تفسير سورة النساء مع المثشابهات"
-    },
-    {
-        "id": 2,
-        "title": "سورت النساء",
-        "video": "videos/1.mp4",
-        "image": "images/سورت النساء.png",
-        "description": "تفسير سورة النساء مع المثشابهات"
+        "description": "تفسير سورة النساء مع المثشابهات من ١ الى ١٩"
     }
 ]
