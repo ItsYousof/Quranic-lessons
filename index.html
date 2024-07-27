@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Learning</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="loading-wrapper">
+        <div id="loading-text">LOADING</div>
+        <div id="loading-content"></div>
+    </div>
+    <main class="laptop-div" id="laptop_showcase">
+        <header>
+            <nav>
+                <li><a href="#" id="homeBtn" onclick="showHome()">Home</a></li>
+                <li><a href="#" id="lessonBtn" onclick="showLessons()">Lessons</a></li>
+                <li style="float: right;"><a href="#" id="loginBtn" onclick="showLogin()">Login</a></li>
+            </nav>
+        </header>
+
+        <section id="home">
+            <div class="showcase">
+                <div class="showcase_overlay"></div>
+                <div class="showcase_image"></div>
+                <div class="showcase_text">
+                    <h1 id="type_text">Quran Learning</h1>
+                    <p>Learn the meaning of Quran.</p>
+                    <a href="#" id="startBtn" onclick="showLogin()">Start</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="lessons" class="lessons" style="display: none;">
+        </section>
+
+        <section id="login" class="login-box" style="display: none;">
+            <h2>Login</h2>
+            <form>
+                <div class="user-box">
+                    <input type="text" name="" required="" id="username">
+                    <label>Username</label>
+                </div>
+                <div class="user-box">
+                    <input type="password" name="" required="" id="password">
+                    <label>Password</label>
+                </div>
+                <div class="user-box">
+                    <input type="submit" name="" value="Login" onclick="checkLogin()">
+                </div>
+            </form>
+        </section>
+
+        <section id="video-player">
+            <div class="close" onclick="closeVideo()">
+                <i>&#10006;</i>
+            </div>
+            <video id="video_player" src="" controls autoplay></video>
+        </section>
+    </main>
+
+    <div id="language_switch">
+        <button id="en" class="flag">English</button>
+        <button id="ar">العربية</button>
+    </div>
+
+    <!-- <footer>
+        <p>Copyright &copy; 2024. All rights reserved.</p>
+        <p>Photo by <a href="https://unsplash.com/@malikshibly?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Malik Shibly</a> on <a href="https://unsplash.com/photos/brown-and-black-hardbound-book-lKbz2ejxYbA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        </p>
+    </footer> -->
+
+    <script src="js/script.js"></script>
+</body>
+</html>
