@@ -1,20 +1,26 @@
 // Translations object
 const translations = {
     en: {
+        loading: "LOADING",
         home: "Home",
         lessons: "Lessons",
         login: "Login",
         quranLearning: "Quran Learning",
         learnMeaning: "Learn the meaning of Quran.",
-        start: "Start"
+        start: "Start",
+        username: "Username",
+        password: "Password"
     },
     ar: {
+        loading: "جار التحميل",
         home: "الرئيسية",
         lessons: "الدروس",
         login: "تسجيل الدخول",
         quranLearning: "تعلم القرآن",
         learnMeaning: "تعلم معاني القرآن.",
-        start: "ابدأ"
+        start: "ابدأ",
+        username: "اسم المستخدم",
+        password: "كلمة المرور"
     }
 };
 
@@ -66,12 +72,15 @@ en.onclick = () => {
 
 // Function to apply translations
 function applyTranslations(language) {
+    document.getElementById('loading-text').textContent = translations[language].loading;
     document.getElementById('homeBtn').textContent = translations[language].home;
     document.getElementById('lessonBtn').textContent = translations[language].lessons;
     document.getElementById('loginBtn').textContent = translations[language].login;
     document.getElementById('type_text').textContent = translations[language].quranLearning;
     document.querySelector('.showcase_text p').textContent = translations[language].learnMeaning;
     document.getElementById('startBtn').textContent = translations[language].start;
+    document.querySelector('label[for="username"]').textContent = translations[language].username;
+    document.querySelector('label[for="password"]').textContent = translations[language].password;
 }
 
 function showLogin() {
